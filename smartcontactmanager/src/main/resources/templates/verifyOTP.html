@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <section>
+        <div class="container-fluid h-custom">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+
+               <div class="alert alert-success" role="alert">
+                OTP sent successfully
+               </div>
+
+
+
+                <form th:action="@{/verifyOTP}" method="post">
+
+                    <div class="form-group">
+
+                        <input name="otp" required type="text" placeholder="enter otp here" class="form-control"/>
+
+                    </div>
+
+                    <div class="container text-center">
+                        <button type="submit" class="btn btn-success">Verify OTP</button>
+                    </div>
+
+                </form>
+             
+
+      
+              
+            </div>
+          </div>
+        </div>
+       
+          <!-- Copyright -->
+      
+          <!-- Right -->
+          <div>
+            <a href="#!" class="text-white me-4">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#!" class="text-white me-4">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#!" class="text-white me-4">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="#!" class="text-white">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </div>
+      </section>
+    
+</body>
+</html>

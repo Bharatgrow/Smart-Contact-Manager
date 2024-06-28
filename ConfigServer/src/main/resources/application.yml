@@ -1,0 +1,13 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: Config-Server
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Bharatgrow/microservice-Config
+          clone-on-start: true
